@@ -1,0 +1,32 @@
+<?lc
+
+if $_GET["mode"] is "listdirectory" then
+put the files
+else
+
+end if
+
+if $_GET["mode"] is "getfile" then
+put the directory & "/" & $_GET["filename"] into tFilename
+put "file:/" & tFilename into tURL
+put URL tURL
+else
+end if
+
+
+if $_GET["mode"] is "savefile" then
+put the directory & "/" & $_GET["filename"] into tFilename
+put $_GET["htmldata"] into theHTML
+
+replace "*LCSPACE*" with space in theHTML
+replace "*LCCR*" with CR in theHTML
+
+
+put "file:/" & tFilename into tURL
+put theHTML into URL tURL
+put the time
+else
+end if
+
+
+?>

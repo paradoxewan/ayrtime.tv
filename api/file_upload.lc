@@ -1,0 +1,53 @@
+<?lc
+
+set the errorMode to "inline"
+
+?>
+
+<html>
+
+<head></head>
+
+<body>
+
+<H1>Upload Form</H1>
+
+<form enctype="multipart/form-data" action="file_upload.lc" method="POST">
+
+Choose a file to upload: <input name="uploadedfile" type="file" /><br />
+
+<input type="submit" value="Upload File" />
+
+</form>
+
+<H1>Uploaded Files</H1>
+
+<p>
+
+<?lc
+
+if $_Files[uploadedfile][error] then
+
+put "There was an error uploading your file:" && $_Files[uploadedfile][error] & "<br />"
+
+else
+
+put $_Files[uploadedfile][name] into tFileName
+
+put $_Files[uploadedfile][type] into tFileType
+
+put $_Files[uploadedfile][size] into tFileSize
+
+put $_Files[uploadedfile][filename] into tFilePath
+
+put "Your file '" & tFileName & "' was uploaded successfully. It is" && tFileSize && "bytes in size."
+
+end if
+
+?>
+
+</p>
+
+</body>
+
+</html>

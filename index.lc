@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+<html lang="en-us" class="no-js">
+
+	<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139343511-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139343511-1');
+</script>
+
+		<meta charset="utf-8">
+		<title>AYRTIME - Making Screens Local</title>
+		<meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ayrtime">
+
+        <!-- ================= Favicons ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+		<!-- ============== Resources style ============== -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="https://js.stripe.com/v3/"></script>
+	</head>
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'fMvt3Z2avnpAowi4p';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+	<body>
+
+		<!-- +++ Page loading +++ -->
+		<div id="loading">
+
+			<div id="preloader" class="animated-middle">
+
+				<!-- Your logo -->
+				<img src="img/logo.png" alt="" class="loading-logo" />
+
+				<span class="loading-text">Loading from our cloud</span>
+
+				<span class="load">
+					<span class="loading-dot"></span>
+					<span class="loading-dot"></span>
+					<span class="loading-dot"></span>
+					<span class="loading-dot"></span>
+				</span>
+
+			</div>
+
+		</div>
+
+		<!-- +++ START - Fullpage sections +++ -->
+		<div id="fullpage">
+
+			<!-- +++ START - Home +++ -->
+			<div class="section" id="section0">
+
+				<!-- Your logo -->
+        		<img src="img/logo.png" alt="" class="home-logo" />
+
+				<!-- Background slideshow & light overlay -->
+				<div class="slideshow-home"></div>
+				<div class="slide-overlay"></div>
+
+				<div class="intro">
+
+					<!-- Big title  -->
+					<h1 class="open-anim opacity-0">Welcome to Ayrtime</h1>
+
+					<p class="open-anim opacity-0">If you are a <strong>local business</strong> we can help.<br>
+						Click on the next button to get more information about our services.</p>
+
+					<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
+					<a id="button-more" class="light-btn open-anim opacity-0">More Information</a>
+
+				</div>
+
+				<!-- Scroll indicator -->
+				<div class="scroll-indicator">
+
+					<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
+					<a id="indicator-scroll"><i class="icon ion-ios-arrow-down"></i></a>
+
+				</div>
+
+			</div>
+			<!-- +++ END - Home +++ -->
+
+			<!-- +++ START - About +++ -->
+			<div class="section" id="section1">
+
+				<section id="about" class="text-left-block">
+
+					<div class="row row-no-margin">
+
+						<!-- The id="invert-slideshow" and id="invert-text" are used for the responsive mode under 1025px. With that, the slideshow is displayed after the text, looking better for the user experience. If you don't want to invert these divs, just remove the id.-->
+						<div id="invert-slideshow" class="col-xs-12 col-sm-6 col-lg-6 slideshow-about split-section"></div>
+
+						<div id="invert-text" class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
+
+							<div class="left-center-part">
+
+								<h2>Ayrtime has arrived.</h2>
+
+								<p>From 20+ years experience in broadcast graphics, software development, hardware and software. The Airtime platform has arrived to challenge the use of digital media in Ayr. We belive that this technology is underused to its full potential and have set out to challenge that in our local area. </br>
+
+<br></br>We have set out to make the screens and digital displays in Ayr innovative, useful and beautiful. We would love to help you.</p>
+<br></br> Ayrtime is here to help local companies and individuals advertise products and services at realisic prices on the local level. We have started building our network of local screens to help you get your message out locally.
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- +++ END - About +++ -->
+
+			<!-- +++ START - Services +++ -->
+			<div class="section" id="section2">
+
+				<section id="services" class="text-left-block">
+
+					<div class="row row-no-margin">
+
+						<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
+
+							<div class="left-center-part">
+
+								<h2>Ayrtime features</h2>
+
+								<p></p>
+
+								<!-- +++ START - Carousel +++ -->
+								<div id="carousel-services" class="carousel slide" data-interval="6000" data-ride="carousel">
+
+							    	<!-- Carousel indicators -->
+							        <ol class="carousel-indicators">
+							            <li data-target="#carousel-services" data-slide-to="0" class="active"></li>
+							            <li data-target="#carousel-services" data-slide-to="1"></li>
+							            <li data-target="#carousel-services" data-slide-to="2"></li>
+							        </ol>
+
+							        <!-- START - Wrapper for carousel items -->
+							        <div class="carousel-inner">
+
+							        	<!-- Services 1 -->
+							            <div class="active item">
+
+				                			<!-- START - Services row -->
+											<div class="row">
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-mic-outline"></span>
+
+													<h3>Low Cost Digital Signage</h3>
+
+													<p>We supply low cost hardware and software for digital signage.</p>
+
+												</div> <!-- END - Block services -->
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-flask-outline"></span>
+
+													<h3>Designed for the future</h3>
+
+													<p>Lean, reliable, scalable and full HD our hardware and software is designed to take your screens to the next level. Always looking crisp and bright.</p>
+
+												</div> <!-- END - Block services -->
+
+											</div> <!-- END - Services row -->
+
+							            </div>
+
+							            <!-- Services 2 -->
+							            <div class="item">
+
+				                			<!-- START - Services row -->
+											<div class="row">
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-navigate-outline"></span>
+													<h3>Easily Managed.</h3>
+
+													<p>Our systems connect to the internet automatically to get the content for your screen, there are no usb sticks complicated software or manuals to read, it just works.</p>
+
+												</div> <!-- END - Block services -->
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-pulse"></span>
+
+													<h3>Any Screen, ANY Size</h3>
+
+													<p>It does not matter if you have one screen, or one hundred. Our platform scales easily. Want to build a cheap video wall from multiple screens, no problem!</p>
+
+												</div> <!-- END - Block services -->
+
+											</div> <!-- END - Services row -->
+
+							            </div>
+
+							            <!-- Services 3 -->
+							            <div class="item">
+
+				                			<!-- START - Services row -->
+											<div class="row">
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-settings"></span>
+													<h3>Ayrtime Network</h3>
+
+													<p>Get the cost savings by joining the Ayrtime network and sharing your screen with other non-competing ventures. Be part of the local community.</p>
+
+												</div> <!-- END - Block services -->
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-color-wand-outline"></span>
+
+													<h3>Private Projects</h3>
+
+													<p>The technology powering Ayrtime is also avaliable for larger self-contained installations such as airport or larger retails.</p>
+
+												</div> <!-- END - Block services -->
+
+											</div> <!-- END - Services row -->
+
+							            </div>
+
+							        </div>
+							        <!-- END - Wrapper for carousel items -->
+
+							        <!-- Left arrow -->
+							        <a class="carousel-control left" href="#carousel-services" data-slide="prev">
+							            <span class="icon-prev"></span>
+							        </a>
+
+							        <!-- Right arrow -->
+							        <a class="carousel-control right" href="#carousel-services" data-slide="next">
+							            <span class="icon-next"></span>
+							        </a>
+
+							    </div>
+							    <!-- +++ END - Carousel +++ -->
+
+						    </div>
+
+						</div>
+
+						<!-- Slideshow / Image services -->
+						<div class="col-xs-12 col-sm-6 col-lg-6 slideshow-services split-section"></div>
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- +++ END - Services +++ -->
+
+			<!-- +++ START - Portfolio +++ -->
+			<div class="section" id="section3">
+
+		        <section id="portfolio" class="text-left-block">
+
+		        	<div class="col-xs-12 col-sm-6 col-lg-6 split-section no-padding">
+
+			            <div class="portfolio my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+			                <!-- 1 -->
+			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+
+			                    <a href="https://ayrtime.tv/beachcam/ayrbeach.jpg" class="gallery-link small" data-image="https://ayrtime.tv/beachcam/ayrbeach.jpg" itemprop="contentUrl" data-size="1920x1280">
+
+			                        <img src="https://ayrtime.tv/beachcam/ayrbeach.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+
+			                    </a>
+
+			                    <figcaption itemprop="caption description">
+
+			                        <div class="photo-details">
+
+			                            <h4>Keeping it Realtime <small>Live Webcams</small></h4>
+
+			                            <p> One of the biggest features of our platform is its realtime nature. As a demonstration we are currenly pulling live video from a webcam on Ayr Beach to demonstrate the platform.</p>
+
+			                        </div>
+
+			                    </figcaption>
+
+			                </figure>
+
+			                <!-- 2 -->
+			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+
+			                    <a href="img/animation1.gif" class="gallery-link small" data-image="img/animation1.gif" itemprop="contentUrl" data-size="1920x1280">
+
+			                        <img src="img/animation1.gif" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+
+			                    </a>
+
+			                    <figcaption itemprop="caption description">
+
+			                        <div class="photo-details">
+
+			                            <h4>Get in the Game <small>Creative from Berlin</small></h4>
+
+			                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			                        </div>
+
+			                    </figcaption>
+
+			                </figure>
+
+			                <!-- 3 -->
+			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+
+			                    <a href="img/animation3.gif" class="gallery-link small" data-image="img/animation3.gif" itemprop="contentUrl" data-size="1920x1280">
+
+			                        <img src="img/animation3.gif" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+
+			                    </a>
+
+			                    <figcaption itemprop="caption description">
+
+			                        <div class="photo-details">
+
+			                           <h4>Get in the Game <small>Creative from Berlin</small></h4>
+
+			                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+
+			                        </div>
+
+			                    </figcaption>
+
+			                </figure>
+
+			                <!-- 4 -->
+			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+
+			                    <a href="img/animation4.gif" class="gallery-link small" data-image="img/animation4.gif" itemprop="contentUrl" data-size="1920x1280">
+
+			                        <img src="img/animation4.gif" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+
+			                    </a>
+
+			                    <figcaption itemprop="caption description">
+
+			                        <div class="photo-details">
+
+			                            <h4>Get in the Game <small>Creative from Berlin</small></h4>
+
+			                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			                        </div>
+
+			                    </figcaption>
+
+			                </figure>
+
+			                <!-- 5 -->
+			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+
+			                    <a href="img/animation5.gif" class="gallery-link small" data-image="img/animation5.gif" itemprop="contentUrl" data-size="1920x1280">
+
+			                        <img src="img/animation5.gif" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+
+			                    </a>
+
+			                    <figcaption itemprop="caption description">
+
+			                        <div class="photo-details">
+
+			                            <h4>Get in the Game <small>Creative from Berlin</small></h4>
+
+			                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+
+			                        </div>
+
+			                    </figcaption>
+
+			                </figure>
+
+			                <!-- 6 -->
+			                <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+
+			                    <a href="img/animation6.gif" class="gallery-link small" data-image="img/animation6.gif" itemprop="contentUrl" data-size="1920x1280">
+
+			                        <img src="img/animation6.gif" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+
+			                    </a>
+
+			                    <figcaption itemprop="caption description">
+
+			                        <div class="photo-details">
+
+			                            <h4>Get in the Game <small>Creative from Berlin</small></h4>
+
+			                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			                        </div>
+
+			                    </figcaption>
+
+			                </figure>
+
+			            </div>
+
+		            </div>
+
+					<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
+
+						<div class="left-center-part">
+
+							<h2>Made for you.</h2>
+
+							<p>There are two sides to Ayrtime, the hosts, and the advertisers.</p>
+
+							<!-- START - Team -->
+							<div class="row">
+
+								<!-- 1 -->
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+
+
+									<img src="img/member-1.jpg" alt="" class="img-responsive team-member" />
+
+									<h3>Hosting <small>Ayrtime</small></h3>
+
+									<p>If you have a local business you could host Ayrtime on your screens or add new ones. Digital signage can hugely increase your image & reach with clients. It could also be another revenue stream for your location.</p>
+
+								</div>
+
+								<!-- 2 -->
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+
+
+									<img src="img/member-2.jpg" alt="" class="img-responsive team-member" />
+
+									<h3>Advertising <small>on Ayrtime.</small></h3>
+
+									<p>Use our network to get your message out. We create your content, upload to our screens making the whole process really easy. You can even choose to use the created video adverts on your facebook, twitter or instagram.</p>
+<h3>Order Now</h3>
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-sku_EyKc9846G11luP"
+  role="link"
+>
+  1 Location - 1 Month
+</button>
+
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-sku_EyKnSorvB5OW3u"
+  role="link"
+>
+  Full Network - 1 Month
+</button>
+
+<div id="error-message"></div>
+
+<script>
+  var stripe = Stripe('pk_live_Gfr1Eu9s8h8K6tOkigKjod0w');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_EyKc9846G11luP');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_EyKc9846G11luP', quantity: 1}],
+
+      // Note that it is not guaranteed your customers will be redirected to this
+      // URL *100%* of the time, it's possible that they could e.g. close the
+      // tab between form submission and the redirect.
+      successUrl: 'https://ayrtime.tv/success',
+      cancelUrl: 'https://ayrtime.tv/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+
+								</div>
+
+							</div>
+							<!-- END - Team -->
+
+						</div>
+
+					</div>
+
+		        </section>
+
+			</div>
+			<!-- +++ END - Portfolio +++ -->
+
+			<!-- +++ START - Contact +++ -->
+			<div class="section" id="section4">
+
+				<section id="contact" class="text-left-block">
+
+					<div class="row row-no-margin">
+
+						<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section spec-padding-bottom">
+
+							<div class="left-center-part">
+
+								<h2>Get in touch</h2>
+
+		                		<p class="subtitle">We are here to help you <strong>Tuesday through Saturday</strong>, from 9:00 AM to 10:00 PM.<br>
+									Contact us via <strong>Phone : </strong><a href="tel:01292 430 010" class="phone-mail-link">(+44) 01292 430010</a> or <strong>Email</strong> : <a href="mailto:ewan@ayrtime.tv" class="phone-mail-link">info@ayrtime.tv</a></p>
+
+		                		<div class="row">
+
+				                    <div class="col-xs-12 col-sm-12 col-lg-12">
+
+				                        <!-- START - Contact Form -->
+
+
+				                        <form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+
+				                            <div class="row">
+
+				                            	<!-- ! Anti-spam field ! Invisible for users, the major part of bots will write something in this field, then, they will be blocked and no spam in your inbox will come.  -->
+				                                <div class="col-xs-12 col-sm-12 col-lg-12 display-none">
+				                                    <div class="form-group">
+				                                        <input type="text" id="checking" class="form form-control" placeholder="Leave this field empty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Leave this field empty'" name="checking" data-name="Checking">
+				                                    </div>
+				                                </div>
+
+				                                <!-- Full name -->
+				                                <div class="col-xs-12 col-sm-6 col-lg-6">
+				                                    <div class="form-group">
+				                                        <input type="text" id="name" class="form form-control" placeholder="Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name*'" name="name" data-name="Name" required>
+				                                    </div>
+				                                </div>
+
+				                                <!-- E-mail -->
+				                                <div class="col-xs-12 col-sm-6 col-lg-6">
+				                                    <div class="form-group">
+				                                        <input type="email" id="email" class="form form-control" placeholder="Email Address*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address*'" name="email-address" data-name="Email Address" required>
+				                                    </div>
+				                                </div>
+
+				                                <!-- Company -->
+				                                <div class="col-xs-12 col-sm-6 col-lg-6">
+				                                    <div class="form-group">
+				                                        <input type="text" id="company" class="form form-control" placeholder="Company name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Company name'" name="company" data-name="Company" required>
+				                                    </div>
+				                                </div>
+
+				                                <!-- Phone -->
+				                                <div class="col-xs-12 col-sm-6 col-lg-6">
+				                                    <div class="form-group">
+				                                        <input type="tel" id="phone" class="form form-control" placeholder="Phone number*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number*'" name="phone" data-name="Phone" required>
+				                                    </div>
+				                                </div>
+
+				                                <!-- Message -->
+				                                <div class="col-xs-12 col-sm-12 col-lg-12">
+				                                    <div class="form-group">
+				                                        <textarea id="text-area" class="form textarea form-control" placeholder="Your message here*... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here*... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
+				                                    </div>
+				                                    <span class="sub-text">* Required fields</span>
+				                                </div>
+
+				                            </div>
+
+				                            <!-- Form submission -->
+				                            <button type="submit" id="valid-form" class="btn btn-color">Send my Message</button>
+
+				                        </form>
+				                        <!-- END - Contact Form -->
+
+				                        <!-- START - Answer for the contact form is displayed in the next div, do not remove it. -->
+				                        <div id="block-answer">
+
+				                            <div id="answer"></div>
+
+				                        </div>
+				                        <!-- END - Answer... -->
+
+				                    </div>
+
+		               			</div>
+
+								<p class="copyright">© Ayrtime - Advanced Digital Signage Solutions</p>
+
+							</div>
+
+						</div>
+
+						<!-- Map -->
+						<div class="col-xs-12 col-sm-6 col-lg-6 map-info split-section">
+
+							<div id="map"></div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- +++ END - Contact +++ -->
+
+		</div>
+		<!-- +++ END - Fullpage sections +++ -->
+
+		<!-- +++ START - Newsletter panel +++ -->
+		<div id="info">
+
+			<!-- Cross to close the Newsletter panel on top right -->
+			<button class="close-newsletter"><i class="icon ion-close-round"></i></button>
+
+			<div class="content">
+
+				<!-- Your logo -->
+        		<img src="img/logo.png" alt="" class="brand-logo" />
+
+                <p class="subtitle">Enter your email below if you would like to advertise or install Ayrtime. We will get back to you within 24 hours.</p>
+
+                <!-- START - Newsletter Form -->
+				<div id="subscribe">
+
+	                <form action="php/notify-me-2.php" id="notifyMe" method="POST">
+
+	                    <div class="form-group">
+
+	                        <div class="controls">
+
+	                        	<!-- Field  -->
+	                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+	                        	<!-- Spinner top left during the submission -->
+	                        	<i class="fa fa-spinner opacity-0"></i>
+
+	                            <!-- Button -->
+	                            <button class="btn btn-lg submit">Request Callback</button>
+
+	                            <div class="clear"></div>
+
+	                        </div>
+
+	                    </div>
+
+	                </form>
+
+    			</div>
+    			<!-- END - Newsletter Form -->
+
+			</div>
+
+			<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+			<div class="block-message">
+
+				<div class="message">
+
+					<p class="notify-valid"></p>
+
+				</div>
+
+			</div>
+
+			<p class="spam-news"><i class="fa fa-lock"></i> We hate spam just as much as you do. Your email will stay secret.</p>
+
+		</div>
+		<!-- +++ END - Newsletter panel +++ -->
+
+		<!-- +++ Button used for opening the newsletter panel +++ -->
+	
+		<a href="http://qr.ayrtime.tv/user/" class="action-btn">Customer Area</a>
+
+		<!-- +++ List of social media on the bottom right +++ -->
+		<div id="social-nav">
+
+			<ul>
+				<!-- Facebook -->
+				<li>
+					<a href="https://www.facebook.com/ayrtime2019" target="_blank"><i class="fa fa-facebook"></i></a>
+				</li>
+
+				<!-- Twitter -->
+				<li>
+					<a href="https://twitter.com/Ayrtime1" target="_blank"><i class="fa fa-twitter"></i></a>
+				</li>
+
+				<!-- Linkedin -->
+				<li>
+					<a href="https://www.linkedin.com/company/ayrtime-displays" target="_blank"><i class="fa fa-linkedin"></i></a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		    <!-- Background of PhotoSwipe.
+	        	It's a separate element as animating opacity is faster than rgba(). -->
+		    <div class="pswp__bg"></div>
+
+		    <!-- Slides wrapper with overflow:hidden. -->
+		    <div class="pswp__scroll-wrap">
+
+		        <!-- Container that holds slides.
+		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		            Don't modify these 3 item elements, data is added later on. -->
+		        <div class="pswp__container">
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		        </div>
+
+		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		        <div class="pswp__ui pswp__ui--hidden">
+
+		            <div class="pswp__top-bar">
+
+		                <!--  Controls are self-explanatory. Order can be changed. -->
+
+		                <div class="pswp__counter"></div>
+
+		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+		                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      <div class="pswp__preloader__cut">
+		                        <div class="pswp__preloader__donut"></div>
+		                      </div>
+		                    </div>
+		                </div>
+
+		            </div>
+
+		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                <div class="pswp__share-tooltip"></div>
+		            </div>
+
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+		            </button>
+
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+		            </button>
+
+		            <div class="pswp__caption">
+		                <div class="pswp__caption__center"></div>
+		            </div>
+
+		        </div>
+
+		    </div>
+
+		</div>
+		<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
+
+		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+        <!-- ********** jQuery Resources ********** -->
+        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+        <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.easings.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+		<!-- FullPage plugin -->
+		<script src="js/jquery.fullPage.js"></script>
+
+        <!-- Slideshow plugin -->
+        <script src="js/vegas.js"></script>
+
+		<!-- Google Maps API and Skin -->
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyDGJGggn4ksA9lqyyimjdkmd_kdfnSOtGM"></script>
+		<script src="js/map.js"></script>
+
+		<!-- PhotoSwipe Core JS file -->
+		<script src="js/photoswipe.js"></script>
+
+		<!-- PhotoSwipe UI JS file -->
+		<script src="js/photoswipe-ui-default.js"></script>
+
+		<!-- Contact form plugin -->
+		<script src="js/contact-me.js"></script>
+
+		<!-- Newsletter plugin -->
+		<script src="js/notifyMe.js"></script>
+
+		<!-- Main JS File -->
+		<script src="js/main-fullpage.js"></script>
+
+	</body>
+
+</html>

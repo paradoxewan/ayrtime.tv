@@ -1,0 +1,8 @@
+<?lc
+
+put URL("http://admin:admin@86.165.122.104/snapshot.jpg") into thedata
+put "ayrbeach.jpg" into theFilePath
+put thedata into URL ("binfile:" & theFilePath)
+put the time
+
+?>

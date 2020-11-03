@@ -1,0 +1,5 @@
+<?lc
+
+qrCreate "!", "QR data", "M", 3
+
+?>

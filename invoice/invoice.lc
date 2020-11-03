@@ -1,0 +1,188 @@
+<?lc
+global tInvoiceData
+
+put "Ewan Richardson" into tInvoiceData["general"]["company_name"]
+put "36 Doonvale Drive, Alloway, Ayr, KA6 6EF" into tInvoiceData["general"]["company_address"]
+put "07849 831 040" into tInvoiceData["general"]["company_phone"]
+put "ewan@its42.co.uk" into tInvoiceData["general"]["company_email"]
+
+put "INVOICE TO:" into tInvoiceData["general"]["header"]
+put "Poster Plus" into tInvoiceData["customer"]["name"]
+put "7 Alloway Place, Ayr, KA7 2AA" into tInvoiceData["customer"]["address"]
+put "info@posterplus.co.uk" into tInvoiceData["customer"]["email"]
+put the long date into tInvoiceData["dates"]["dateOfInvoice"]
+put the long date into tInvoiceData["dates"]["duedate"]
+put "Poster-OCT-2020" into tInvoiceData["invoiceNumber"]
+
+// add an item
+put "https://ayrtime.tv/posterplus/proof/" into tBaseUrl
+
+put "0" into itemNumber
+put "Video Animation Creation" into tInvoiceData["items"][itemNumber]["DESCRIPTION"]
+put "25.00" into tInvoiceData["items"][itemNumber]["UNIT_PRICE"]
+put "1" into tInvoiceData["items"][itemNumber]["QUANTITY"]
+put "Frostys" into tInvoiceData["items"][itemNumber]["ClientName"]
+put tInvoiceData["items"][itemNumber]["UNIT_PRICE"] *  tInvoiceData["items"][itemNumber]["QUANTITY"] into tInvoiceData["items"][itemNumber]["linetotal"]
+put tBaseUrl & "frosty.mp4" into  tInvoiceData["items"][itemNumber]["tProofUrl"]
+put "<a href=" & quote & tInvoiceData["items"][itemNumber]["tProofUrl"] & quote & ">" & tInvoiceData["items"][itemNumber]["ClientName"] & "</a>" into tLink
+put "Advert Created for Kilmarock Sign for Client: " & tLink into tInvoiceData["items"][itemNumber]["DESCRIPTION_text"]
+
+put "1" into itemNumber
+put "Video Animation Creation" into tInvoiceData["items"][itemNumber]["DESCRIPTION"]
+put "50.00" into tInvoiceData["items"][itemNumber]["UNIT_PRICE"]
+put "1" into tInvoiceData["items"][itemNumber]["QUANTITY"]
+put "PosterPlus" into tInvoiceData["items"][itemNumber]["ClientName"]
+put tInvoiceData["items"][itemNumber]["UNIT_PRICE"] *  tInvoiceData["items"][itemNumber]["QUANTITY"] into tInvoiceData["items"][itemNumber]["linetotal"]
+put tBaseUrl & "Oct-PosterPlus-Advert.mp4" into  tInvoiceData["items"][itemNumber]["tProofUrl"]
+put "<a href=" & quote & tInvoiceData["items"][itemNumber]["tProofUrl"] & quote & ">" & tInvoiceData["items"][itemNumber]["ClientName"] & "</a>" into tLink
+put "Advert Created for Kilmarock Sign for Client: " & tLink into tInvoiceData["items"][itemNumber]["DESCRIPTION_text"]
+
+put "2" into itemNumber
+put "Video Animation Creation" into tInvoiceData["items"][itemNumber]["DESCRIPTION"]
+put "50.00" into tInvoiceData["items"][itemNumber]["UNIT_PRICE"]
+put "1" into tInvoiceData["items"][itemNumber]["QUANTITY"]
+put "Hunter Furnishing" into tInvoiceData["items"][itemNumber]["ClientName"]
+put tInvoiceData["items"][itemNumber]["UNIT_PRICE"] *  tInvoiceData["items"][itemNumber]["QUANTITY"] into tInvoiceData["items"][itemNumber]["linetotal"]
+put tBaseUrl & "hunter.mp4" into  tInvoiceData["items"][itemNumber]["tProofUrl"]
+put "<a href=" & quote & tInvoiceData["items"][itemNumber]["tProofUrl"] & quote & ">" & tInvoiceData["items"][itemNumber]["ClientName"] & "</a>" into tLink
+put "Advert Created for Kilmarock Sign for Client: " & tLink into tInvoiceData["items"][itemNumber]["DESCRIPTION_text"]
+
+put "3" into itemNumber
+put "Video Animation Creation" into tInvoiceData["items"][itemNumber]["DESCRIPTION"]
+put "25.00" into tInvoiceData["items"][itemNumber]["UNIT_PRICE"]
+put "1" into tInvoiceData["items"][itemNumber]["QUANTITY"]
+put "Hampton & McMurray" into tInvoiceData["items"][itemNumber]["ClientName"]
+put tInvoiceData["items"][itemNumber]["UNIT_PRICE"] *  tInvoiceData["items"][itemNumber]["QUANTITY"] into tInvoiceData["items"][itemNumber]["linetotal"]
+put tBaseUrl & "hampton.mp4" into  tInvoiceData["items"][itemNumber]["tProofUrl"]
+put "<a href=" & quote & tInvoiceData["items"][itemNumber]["tProofUrl"] & quote & ">" & tInvoiceData["items"][itemNumber]["ClientName"] & "</a>" into tLink
+put "Advert Created for Kilmarock Sign for Client: " & tLink into tInvoiceData["items"][itemNumber]["DESCRIPTION_text"]
+
+put "4" into itemNumber
+put "Video Animation Creation" into tInvoiceData["items"][itemNumber]["DESCRIPTION"]
+put "50.00" into tInvoiceData["items"][itemNumber]["UNIT_PRICE"]
+put "1" into tInvoiceData["items"][itemNumber]["QUANTITY"]
+put "Meat In The Middle" into tInvoiceData["items"][itemNumber]["ClientName"]
+put tInvoiceData["items"][itemNumber]["UNIT_PRICE"] *  tInvoiceData["items"][itemNumber]["QUANTITY"] into tInvoiceData["items"][itemNumber]["linetotal"]
+put tBaseUrl & "meatinthemiddlev4.mp4" into  tInvoiceData["items"][itemNumber]["tProofUrl"]
+put "<a href=" & quote & tInvoiceData["items"][itemNumber]["tProofUrl"] & quote & ">" & tInvoiceData["items"][itemNumber]["ClientName"] & "</a>" into tLink
+put "Advert Created for Kilmarock Sign for Client: " & tLink into tInvoiceData["items"][itemNumber]["DESCRIPTION_text"]
+
+put "5" into itemNumber
+put "Video Animation Creation" into tInvoiceData["items"][itemNumber]["DESCRIPTION"]
+put "00.00" into tInvoiceData["items"][itemNumber]["UNIT_PRICE"]
+put "1" into tInvoiceData["items"][itemNumber]["QUANTITY"]
+put "Innovec" into tInvoiceData["items"][itemNumber]["ClientName"]
+put tInvoiceData["items"][itemNumber]["UNIT_PRICE"] *  tInvoiceData["items"][itemNumber]["QUANTITY"] into tInvoiceData["items"][itemNumber]["linetotal"]
+put tBaseUrl & "Innovec.mp4" into  tInvoiceData["items"][itemNumber]["tProofUrl"]
+put "<a href=" & quote & tInvoiceData["items"][itemNumber]["tProofUrl"] & quote & ">" & tInvoiceData["items"][itemNumber]["ClientName"] & "</a>" into tLink
+put "Advert Created for Kilmarock Sign for Client: " & tLink into tInvoiceData["items"][itemNumber]["DESCRIPTION_text"]
+
+
+
+
+
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css" media="all" />
+  </head>
+  <body>
+  <div id="editor">
+    <header class="clearfix">
+      <div id="logo">
+        <img src="logo.png">
+      </div>
+      <div id="company">
+        <h2 class="name"><?lc put tInvoiceData["general"]["company_name"] ?></h2>
+        <div><?lc put tInvoiceData["general"]["company_address"]?></div>
+        <div><?lc put tInvoiceData["general"]["company_phone"] ?></div>
+        <div><a href="mailto:<?lc put tInvoiceData["general"]["company_email"] ?>"><?lc put tInvoiceData["general"]["company_email"] ?></a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client">
+          <div class="to"><?lc put tInvoiceData["general"]["header"]?></div>
+          <h2 class="name"><?lc put tInvoiceData["customer"]["name"] ?></h2>
+          <div class="address"><?lc put tInvoiceData["customer"]["address"] ?></div>
+          <div class="email"><a href="mailto:<?lc put tInvoiceData["customer"]["email"] ?>"><?lc put tInvoiceData["customer"]["email"] ?></a></div>
+        </div>
+        <div id="invoice">
+          <h1><?lc put tInvoiceData["invoiceNumber"] ?></h1>
+          <div class="date">Date of Invoice: <?lc put tInvoiceData["dates"]["dateOfInvoice"] ?></div>
+          <div class="date">Due Date: <?lc put tInvoiceData["dates"]["duedate"] ?></div>
+        </div>
+      </div>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="no">#</th>
+            <th class="desc">DESCRIPTION</th>
+            <th class="unit">UNIT PRICE</th>
+            <th class="qty">QUANTITY</th>
+            <th class="total">TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+
+<?lc
+put tInvoiceData["items"] into tItemList
+put the keys of  tItemList into  tItemList
+put the number of lines of tItemList into tCount
+repeat with x = 1 to tCount
+        put line x of tItemList into tItem
+
+         Put "<tr>"
+         put "<td class=" & quote & "no" & quote & ">" & x & "</td>"
+         put "<td class=" & quote & "desc" & quote & "><h3>" &tInvoiceData["items"][tItem]["DESCRIPTION"] &  "</h3>" &  tInvoiceData["items"][tItem]["DESCRIPTION_text"] & "</td>"
+         put "<td class=" & quote & "unit" & quote &  ">" &tInvoiceData["items"][tItem]["UNIT_PRICE"] & "</td>"
+         put "<td class=" & quote & "qty" & quote & ">" &tInvoiceData["items"][tItem]["QUANTITY"] & "</td>"
+         put "<td class=" & quote & "total" & quote &  ">" &tInvoiceData["items"][tItem]["linetotal"] & "</td>"
+         put "</tr>"
+         add tInvoiceData["items"][tItem]["linetotal"] to tInvoiceTotal
+ end repeat
+ ?>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">SUBTOTAL</td>
+            <td>&pound<?lc put tInvoiceTotal ?>.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">TAX %</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">GRAND TOTAL</td>
+            <td><?lc put "&pound" &  tInvoiceTotal ?>.00</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div id="thanks">Thank you!</div>
+      <div id="notices">
+        <div>NOTICE:</div>
+      
+        <div class="notice">Starling Bank: SC:60-83-71 AC:96661738</div>
+        <div class="notice">IBAN: GB40SRLG60837196661738</div>
+        <div class="notice">Swift/Bic: SRLGGB2L</div>
+          <div class="notice">Videos can be downloaded from this invoice.</div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    </div>
+  </body>
+
+</html>
